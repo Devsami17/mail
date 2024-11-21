@@ -15,6 +15,18 @@
 
 
 }
+html{
+    min-height:100%;
+    position:relative;
+}
+body{
+
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
 
 @font-face {
     font-family: 'logo';
@@ -171,7 +183,7 @@ button:hover{
     margin-left: 4px;
     border: 1.5px solid #000;
 }
-.section-1 h1{
+.section-1 h1 ,.section-6 h1{
     font-family: "Bitter";
     font-weight: 600;
 
@@ -180,7 +192,7 @@ button:hover{
   margin-top: 10px;
   text-transform: capitalize;
     word-spacing: 4px;
-    /* line-height: 90px; */
+    line-height: 1.1;
 }
 section{
     padding-top: 30px;
@@ -193,6 +205,16 @@ section{
     font-size: 22px;
     margin-top: 25px;
 }
+.section-1 .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.section-1 .social-icons img{
+    height: 50px;
+    width: 50px;
+}
 .section-1 .credit-card-text{
     font-family: var(--font);
     font-weight: 400;
@@ -201,15 +223,15 @@ section{
   display: block;
 
 }
-.section-1 img{
+
+.section-1 .tick-icon{
     position: relative;
     top: -1px;
-}
-.section-1  img{
     height: 23px !important;
     width: 23px !important;
 }
-.section-1 h1 span{
+
+.section-1 h1 span ,.section-6 h1 span{
     background-image: linear-gradient(90deg, #1179fc 25%, #dc82fc);
     -webkit-background-clip: text;
     background-clip: text;
@@ -250,15 +272,15 @@ height: 100%;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
-.section-3 {
+.section-3 , .section-7 , .section-8 {
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
-.section-3 .part-2{
+.section-3 .part-2 , .section-7 .part-2 , .section-8 .part-2{
     width: 46%;
 }
-.section-3 .part-1{
+.section-3 .part-1 , .section-7 .part-1 , .section-8 .part-1{
     width: 50%;
 }
 .ctr{
@@ -426,6 +448,7 @@ transition: all .2s ease-in-out;
 }
 footer{
     background-color: #4674C6;
+    margin-top: auto !important;
 
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -635,6 +658,27 @@ height: 230px;
         flex-wrap: wrap;
         padding-top: 10px !important;
     }
+    .section-7 {
+        flex-wrap: wrap;
+        margin-top: 0px !important;
+    }
+    .section-8{
+flex-wrap: wrap-reverse;
+margin-top: 0px !important;
+
+
+
+    }
+    .section-8 h2 ,  .section-7 h2{
+        margin-top: 20px !important;
+    }
+    .section-7 .part-1 ,.section-7 .part-2{
+        width: 100% !important;
+    }
+    .section-8 .part-1 ,.section-8 .part-2
+    {
+        width: 100% !important;
+    }
     .section-4 ul{
         width: 100% !important;
         padding: 0px  !important;
@@ -683,6 +727,7 @@ height: 230px;
     footer .footer-menu-col .footer-menus a {
         font-size: 14px !important;
     }
+
 } 
 .respo-header{
     display: none;
@@ -694,4 +739,91 @@ height: 230px;
     .section-1 p{
         font-size: 25px !important;
     }
+}
+.login-area .logo-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.login-area .logo-area img{
+    height: 35px;
+    width: 35px;
+}
+.login-area .logo-area h4{
+    font-size: 30px !important;
+    font-family: 'logo',sans-serif !important;
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+
+    cursor: pointer;
+  color: #000;
+    font-size: 19px;
+    line-height: 0px !important
+}
+.login-area .login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin:0 auto;
+    max-width: 400px;
+  
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+    /* background-color: #f6f8fb; */
+    flex-direction: column;
+    margin-top: 50px;
+}
+.login-area .login-container h2{
+    font-size: 28px;
+}
+.login-area .login-container input{
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: #3c4858;
+    height: 42px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all .5s ease;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    width: 100%;
+    display: block;
+    padding: .375rem .75rem;
+outline: none;
+font-family: var(--font);
+font-weight: 500;
+margin-top: 25px;
+}
+.login-area .login-container form{
+    width: 100%;
+}
+.login-area .login-container button{
+    margin-top: 15px;
+}
+.login-area .login-container  p{
+    margin-bottom: 0px ;
+    font-family: var(--font);
+    font-size: 16px;
+margin-top: 14px;
+
+
+}
+.login-area .login-container  p a{
+color: #000;
+font-weight: 600;
+
+}
+.login-area .login-container input:focus{
+border: 1px solid #4674C6;
+}
+main{
+    margin-bottom: 100px;
 }

@@ -1,0 +1,349 @@
+.plan-selector button.active,
+.pricing-main {
+    background-color: #fff
+}
+
+.pricing-main p,
+.recommanded-items p {
+    font-family: "Bitter";
+    font-size: 16px;
+    color: #000
+}
+
+.pricing-2-main button,
+.pricing-card button {
+    min-height: 48px;
+    box-shadow: 0 2px 4px -2px rgba(27, 27, 27, .1), 0 4px 8px -2px rgba(27, 27, 27, .14)
+}
+
+.pricing-card button,
+.pricing-card-main a,
+.recommanded-items a,
+.tabs a {
+    text-decoration: none
+}
+
+.pricing-main {
+    width: 100%;
+    overflow: hidden;
+    font-family: "Archivo Narrow";;
+    border-right: 2px solid #4674C6
+}
+
+.pricing-main-2 {
+    padding: 40px 10px
+}
+
+.pricing-main-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.plan-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 16px;
+    background-color: #4674C6;
+    padding: 4px
+}
+
+.plan-selector button {
+    padding: 16px 24px;
+    background-color: transparent;
+    height: 96px;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    border-radius: 15px
+}
+
+.plan-selector button div {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    color: #fff
+}
+
+.plan-selector button div h5 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    font-family: "Archivo Narrow" !important;
+    color: #fff
+}
+
+.plan-selector button div span {
+    font-size: 12px;
+    font-weight: 500;
+    font-family:"Archivo Narrow";
+}
+
+.plan-selector button.active h5,
+.plan-selector button.active span {
+    color: #000
+}
+
+.price-range-main {
+    width: 90%;
+    margin-left: auto;
+    margin-bottom: 32px;
+    margin-right: auto
+}
+
+.range-container {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative
+}
+
+.range-slider {
+    width: 100%;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #4674C6 0, #4674C6, #6a90b1 0, #6a90b1 100%);
+    border-radius: 5px;
+    outline: 0;
+    position: relative;
+    z-index: 1
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #4674C6;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2
+}
+
+.range-ticks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    top: 25px
+}
+
+.range-tick-label {
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family:"Archivo Narrow";
+}
+
+.recommanded-button {
+    background-color: #4674C6;
+    border-radius: .5rem;
+    margin-bottom: 0;
+    padding: 8px 16px;
+    width: max-content;
+    border: none;
+    color: #fff;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.recommanded-items {
+    border-bottom: 1px solid #474747;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.recommanded-items p {
+    font-weight: 700;
+    margin-bottom: 2px
+}
+
+.recommanded-items span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Archivo Narrow";
+}
+
+.recommanded-items a span {
+    color:#000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.pricing-parent {
+    border-radius: 40px;
+    display: grid;
+    border: 2px solid #4674C6;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 8fr 3fr
+}
+
+.pricing-2 {
+    padding: 32px 16px;
+    display: grid;
+    place-items: normal;
+    background-color: #fff;
+}
+
+.pricing-2-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.pricing-2-main p {
+    font-family: "Archivo Narrow";
+    font-size: 20px;
+    font-weight: 600;
+    color: #000
+}
+
+.pricing-2-main span {
+    color: #1b1b1b;
+    font-weight: 500;
+    font-size: 16px;
+    font-family:"Bitter";
+}
+
+.plan-3 h6,
+.tabs a div {
+    font-weight: 700;
+    font-family:"Archivo Narrow";
+}
+
+.plan-3 {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #474747
+}
+
+.plan-3 h6 {
+    font-size: 22px;
+    color: #000;
+    font-family: "Bitter";
+}
+
+.pricing-2-main button {
+    background-color: #4674C6;
+    border-radius: 16px;
+    padding: 8px 12px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    color: #fff;
+    margin-top: 20px;
+    font-family: "Archivo Narrow";
+    font-weight: 600
+}
+
+.pricing-2-main button:hover {
+    background-color: #fff;
+    border: 2px solid #4674C6;
+    color: #000;
+    transition: .4s ease-in-out
+}
+
+@media only screen and (min-width:300px) and (max-width:950px) {
+    .plan-selector {
+        grid-template-columns: 1fr;
+        border-radius: .75rem
+    }
+    .pricing-parent {
+        grid-template-columns: 1fr;
+        border-radius: 1rem
+    }
+    .pricing-main-2 {
+        border-bottom: 2px solid #3b3585;
+        padding: 0
+    }
+    .pricing-main {
+        padding: 1.5rem;
+        border-right: none
+    }
+    .pricing-2 {
+        padding: 0 1rem 2rem
+    }
+    .plan-selector button div h5 {
+        font-size: 1rem
+    }
+    .plan-selector button {
+        height: auto;
+        border-radius: .75
+    }
+    .pricing-main-3 {
+        gap: 2rem
+    }
+    .recommanded-items {
+        display: grid;
+        place-items: start;
+        grid-gap: 1.25rem;
+        padding-top: .75rem
+    }
+    .recommanded-button {
+        margin-bottom: 5px
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:550px) {
+    .pricing-parent{
+        width: 95% !important;
+    }
+    .range-ticks {
+        display: none
+    }
+    .price-range-main {
+        margin-bottom: 0
+    }
+    .pricing-2-main span,
+    .recommanded-items a span {
+        font-size: 14px
+    }
+    .main-tabs {
+        flex-direction: column
+    }
+    .plan-3 h6 {
+        font-size: 18px
+    }
+    .tabs a {
+        padding: 0 !important;
+        height: 50px !important
+    }
+    .tabs a div {
+        font-size: 15px !important
+    }
+.tabs-content{
+flex-wrap: wrap !important;
+}
+}
+
+h1{
+    font-family: "Bitter";
+    font-weight: 600;
+
+    text-align: center;
+    font-size:50px !important;
+  margin-top: 10px;
+  text-transform: capitalize;
+    word-spacing: 4px;
+    line-height: 1.1;
+}
+@media only screen and (min-width:2000px) {
+    .pricing-parent{
+        width: 60% !important;
+    }
+}

@@ -1,0 +1,220 @@
+.tabs {
+    background-color: transparent;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 0;
+    border: initial
+}
+
+.main-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.tabs a.active {
+    color: #15c11e;
+    border-bottom: 2px solid #15c11e
+}
+
+.tabs a {
+    color: #000;
+    border-bottom: none;
+    border-radius: 24px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+    justify-content: center;
+    padding: 24px 0;
+    transition: none
+}
+
+.tabs a.active div {
+    color: #15c11e
+}
+
+.tabs a div {
+    font-size: 20px;
+    color: #000
+}
+
+.tabs-content-main .pricing-card-main.active,
+.tabs-parent {
+    display: block
+}
+
+.tabs-content {
+    display: flex;
+    
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px
+}
+
+.pricing-card-main {
+    align-content: center;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 327px;
+    min-width: 200px
+}
+
+.pricing-card {
+    min-height: 300px;
+    background: var(--marketing-white, #fff);
+    color: #000;
+    gap: 32px;
+    border: 2px solid #4674C6 !important;
+    max-height: 450px;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    text-align: center;
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important
+}
+
+.pricing-card h6 {
+    color: #4674C6;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Archivo Narrow"
+}
+
+.pricing-card span,
+.pricing-features-content ul li span {
+    font-size: 14px;
+    font-family: "Archivo Narrow";
+    color: #000
+}
+
+.pricing-card h4 {
+    font-size: 32px;
+    color: #000;
+    font-family: "Bitter";
+    font-weight: 600
+}
+
+.pricing-card-main a,
+.pricing-features-content span {
+    font-size: 16px;
+    font-family: "Archivo Narrow";
+    font-weight: 600
+
+}
+.pricing-card button:hover span{
+    color: #fff !important;
+}
+.pricing-card button {
+    margin-top: 12px;
+    background-color: #4674C6;
+    color: #fff;
+    border: 2px solid #4674C6;
+    border-radius: 16px;
+    padding: 8px 12px;
+    position: relative;
+    text-align: center;
+    transition: .5s;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: center
+}
+.pricing-card button.active{
+    background-color: #fff;
+    
+}
+.pricing-card button.active span {
+    color: #4674C6;
+}
+.pricing-card button span {
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: "Archivo Narrow";
+    font-weight: 500;
+    color: #fff
+}
+
+.pricing-features {
+    min-height: 375px;
+    background-color: #fff;
+    border: 2px solid #4674C6;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top: 0;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    gap: 30px
+}
+
+.pricing-features-content {
+    color: #1b1b1b;
+    gap: 16px;
+    display: flex;
+    flex-direction: column
+}
+
+.pricing-features-content ul {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0
+}
+
+.pricing-features-content li {
+    align-items: center;
+    display: inline-flex;
+    gap: 0;
+    list-style: none
+}
+
+.pricing-features-content ul li img {
+    height: 16px;
+    width: 16px
+}
+
+.pricing-features-content ul li span {
+    margin-left: 8px;
+    font-weight: 400
+}
+
+.pricing-card-main a {
+    align-items: center;
+    display: inline-flex;
+    outline: 0;
+    position: relative;
+    text-underline-offset: .25rem;
+    color: #15c11e
+}
+
+.pricing-card-main a svg {
+    height: 16px;
+    width: 16px;
+    margin-left: 8px
+}
+

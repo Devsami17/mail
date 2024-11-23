@@ -11,3 +11,21 @@ document.querySelectorAll('.accordion-item button').forEach(button => {
 document.getElementById("hamburger").addEventListener("click", function() {
     document.querySelector(".respo-header").classList.toggle("active");
 });
+
+const toggle = document.getElementById("toggle");
+const leftText = document.querySelector(".text-left");
+const rightText = document.querySelector(".text-right");
+
+toggle.addEventListener("change", function() {
+    if (toggle.checked) {
+        leftText.style.color = "#b3b3b3";  
+        rightText.style.color = "#000";   
+    } else {
+        leftText.style.color = "#000";    
+        rightText.style.color = "#b3b3b3"; 
+    }
+});
+
+
+
+

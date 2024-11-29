@@ -123,9 +123,9 @@
 }
 .pricing-card button {
     margin-top: 12px;
-    background-color: #4674C6;
-    color: #fff;
-    border: 2px solid #4674C6;
+    
+    color: #000;
+background-color: #fff;
     border-radius: 16px;
     padding: 8px 12px;
     position: relative;
@@ -136,6 +136,7 @@
     justify-content: center;
     max-width: 100%;
     box-sizing: border-box;
+    min-width: 120px;
     align-items: center
 }
 .pricing-card button.active{
@@ -143,7 +144,7 @@
     
 }
 .pricing-card button.active span {
-    color: #4674C6;
+    color: #000;
 }
 .pricing-card button span {
     padding: 0 16px;
@@ -153,11 +154,15 @@
     font-size: 18px;
     font-family: "Archivo Narrow";
     font-weight: 500;
-    color: #fff
+    color: #000
+}
+.pricing-card.active button{
+    background-color: #4674C6;
+    color:#fff;
 }
 
 .pricing-features {
-    min-height: 375px;
+    min-height: 330px;
     background-color: #fff;
     border: 2px solid #4674C6;
     border-bottom-left-radius: 24px;
@@ -179,7 +184,7 @@
 }
 
 .pricing-features-content ul {
-    gap: 8px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
     margin: 0;
